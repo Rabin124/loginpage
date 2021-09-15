@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="app.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    :root{
+    --font1:'Bebas Neue',cursive;
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #e8290b;
+}
+
+#navbar{
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar-brand{
+    font-size: 40px;
+    letter-spacing: 6px;
+    font-family: 'Bebas Neue', cursive;
+}
+.navbar-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-link{
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive;
+}
+#entry{
+    color: #fff;
+    height: 80vh;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px;
+    text-align: center;
+}
+
+.entry-text{
+    margin-top: 80px;
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+}
+.red-outlined-btn{
+    margin-top: 30px;
+    font-size: 30px;
+    color: #fff;
+    background-color:#e8290b ;
+    outline: 1px solid #222;
+    border: none;
+    outline-offset: -5px;
+    padding: 10px;
+    transition: all .2s linear;
+    /* transition: all 1s linear; */
+    cursor: pointer;
+}
+.red-outlined-btn:hover{
+    background-color: #FFF;
+    color: #e8290b;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 120px;
+}
+.section-subtitle{
+    color: #e8290b;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 5px;
+    
+}
+.section-header{
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: var(--font1);
+
+}
+.section-subfooter{
+    color: #e8290b;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.section-footer{
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: var(--font1);
+    color: white;
+    text-align: center;
+}
+#blog{
+    background-color: #222;
+    padding: 150px;
+    color: #fff;
+    text-align: center;
+}
+.blog{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    margin-bottom: 80px;
+}
+.blog-image{
+    width: 40%;
+
+    height: 40vh;
+}
+.blog-info{
+    width: 50%;
+}
+.blog-reverse{
+    flex-direction: row-reverse;
+}
+.blogs{
+    margin-top: 50px;
+}
+.blog-header{
+    font-family: var(--font1);
+    font-size: 40px;
+    letter-spacing: 2px;
+    /* line-height: 20px; */
+}
+.blog-description{
+    margin-top: 15px;
+}
+
+#projects{
+    /* padding-top: 60px; */
+    padding: 60px 120px;
+    text-align: center;
+}
+.project-list{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+.project {
+    text-align: start;
+    /* width: 23%; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;   
+    border: .8px solid #22222222;
+}
+.project-info{
+    padding: 20px;
+}
+#testimonial{
+    text-align: center;
+}
+.testimonial-card{
+    box-shadow: 0px 20px 40px #0000000d;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 60px 120px;
+    z-index: 2;
+    background-color: #fff;
+    position: relative;
+}
+
+.testimonial-avatar{
+    display: block;
+    width: 200px;
+    border-radius: 100%;
+    margin: auto;
+}
+#contact{
+    margin-top: -200px;
+    padding-top: 250px;
+    background-color: #222;
+    z-index: 1;
+    /* padding: 0 120px; */
+    /* margin: 0 120px; */
+}
+form{
+    margin: 0 auto;
+}
+label{
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+}
+input,textarea{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+form{
+    width: 50%;
+
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="#" class="navbar-brand">Rabin Adhikari</a>
+        <div class="navbar-links">
+            <a class="navbar-link" href="#">Home</a>
+            <a class="navbar-link" href="#about">About</a>
+            <a class="navbar-link" href="#blog">Blog</a>
+            <a class="navbar-link" href="#projects">Projects</a>
+            <a class="navbar-link" href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section id="entry">
+        <h1 class="entry-text">
+            Rabin Adhikari
+        </h1>
+        <div class="entry-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minima consequatur commodi possimus ullam iure numquam obcaecati velit labore nam dolores laboriosam facere est maiores dicta, quo ratione dolorem laudantium repellat. Veritatis cumque explicabo a optio praesentium incidunt quasi placeat nostrum, debitis voluptas ex sed!
+        </div>
+        <button class="red-outlined-btn">Get in Touch</button>
+    </section>
+    <section id="about">
+        <h6 class="section-subtitle">Blog</h6>
+        <h1 class="section-header">My Writing</h1>
+        <p class="about-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique earum asperiores voluptates quod quibusdam veniam sint, vero officiis, esse corrupti ex quam numquam, quisquam rerum! Architecto earum iusto iste recusandae, incidunt aspernatur ducimus dolorem!</p>
+    </section>
+    <section id="blog">
+        <h6 class="section-subtitle">About</h6>
+        <h1 class="section-header">Who am I ?</h1>
+        <div class="blogs">
+
+            <div class="blog">
+                
+                <img src="https://images.unsplash.com/photo-1624022520134-2a496dcdb18b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" class="blog-image" >
+            <div class="blog-info">
+                
+                <div class="blog-header">Blog 2</div>
+                <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas earum quasi eius, alias blanditiis voluptate cupiditate provident rem ab, nesciunt culpa ipsum facere?</p>
+                <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas earum quasi eius, alias blanditiis voluptate cupiditate provident rem ab, nesciunt culpa ipsum facere?</p>
+            </div>
+        </div>
+        <div class="blog blog-reverse">
+
+            <img src="https://images.unsplash.com/photo-1624022520134-2a496dcdb18b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" class="blog-image" >
+            <div class="blog-info">
+                
+                <div class="blog-header">Blog 2</div>
+                <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas earum quasi eius, alias blanditiis voluptate cupiditate provident rem ab, nesciunt culpa ipsum facere?</p>
+                <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quas earum quasi eius, alias blanditiis voluptate cupiditate provident rem ab, nesciunt culpa ipsum facere?</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="projects">
+        <h6 class="section-subtitle">Project</h6>
+        <h1 class="section-header">My Project</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1624022520134-2a496dcdb18b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Project One</h2>
+                    <div class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repellat hic ea recusandae quaerat quo consectetur tenetur facere quis, inventore, ipsum molestias quod libero maxime? Magnam eligendi ex quasi veritatis ab. Neque, perferendis sunt.</div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1624022520134-2a496dcdb18b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Project One</h2>
+                    <div class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repellat hic ea recusandae quaerat quo consectetur tenetur facere quis, inventore, ipsum molestias quod libero maxime? Magnam eligendi ex quasi veritatis ab. Neque, perferendis sunt.</div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1624022520134-2a496dcdb18b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Project One</h2>
+                    <div class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repellat hic ea recusandae quaerat quo consectetur tenetur facere quis, inventore, ipsum molestias quod libero maxime? Magnam eligendi ex quasi veritatis ab. Neque, perferendis sunt.</div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1624022520134-2a496dcdb18b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Project One</h2>
+                    <div class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi repellat hic ea recusandae quaerat quo consectetur tenetur facere quis, inventore, ipsum molestias quod libero maxime? Magnam eligendi ex quasi veritatis ab. Neque, perferendis sunt.</div>
+                </div>
+            </div>
+        </div>
+        <button class="red-outlined-btn">view More</button>
+    </section>
+    <section id="testimonial">
+        <h6 class="section-subtitle">Testimonial</h6>
+        <h1 class="section-header">What my clients say</h1>
+        <div class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1624022520134-2a496dcdb18b?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="" class="testimonial-avatar">
+            <div class="testimonial-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique architecto suscipit neque nobis facere, doloremque veniam velit eligendi accusamus reiciendis, beatae eaque voluptates! Maxime hic porro, ullam earum consequuntur rem optio est ipsam doloribus.</div>
+            <div class="testimonial-author">John doe</div>
+        </div>
+    </section>
+    <section id="contact">
+        <form action="#contact">
+            <h6 class="section-subfooter">Contact</h6>
+        <h1 class="section-footer">Please Fill Up Information</h1>
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" placeholder="name" id="name2" name="name">
+            </div>
+            <div class="form-field">
+                <label for="">Email</label>
+                <input type="text" name="email" placeholder="email" id="email">
+            </div>
+            <div class="form-field">
+                <label for="">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="red-outlined-btn">Get in Touch</button>
+        </form>
+            
+        </section>
+        <footer>
+            Made with <span>&hearts;</span> by Rabin Adhikari
+        </footer>
+    </body>
+    </html>
